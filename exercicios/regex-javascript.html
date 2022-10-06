@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Regex-Javascript</title>
+</head>
+<body style="background-color: black">
+
+	<script>
+		var target = "11a22b33c";
+
+		var exp = /(\d\d)(\w)/g;
+
+		exp.test(target);
+
+		exp.exec(target);
+
+
+
+		
+	</script>
+	<script>
+		var alvo = '11a22b33c';
+		var exp  = /(\d\d)(\w)/g;
+		var resultado = null;
+		while (resultado = exp.exec(alvo)){
+			console.log(resultado)
+			console.log(exp.lastIndex);
+		}
+
+	</script>
+
+
+</body>
+</html>
